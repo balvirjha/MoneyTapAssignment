@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/boxedit"
+        android:drawableLeft="@drawable/wiki"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:hint="Wiki Search Here"
+        android:lines="1"
+        android:textSize="25sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_result_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editSearch"
+        android:padding="10dp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>
